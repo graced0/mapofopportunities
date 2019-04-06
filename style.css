@@ -8,8 +8,10 @@ body{
 
 ul {
   list-style-type: none;
-  width: 175px;
-  background-color: ##FFFFFF;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #FFFFFF;
   height: 100%;
   position: fixed;
   overflow: auto;
@@ -22,11 +24,11 @@ li a {
   text-decoration: none;
 }
 
-li a.active {
-  background-color: #FFC900;
-  color: white;
-}
-
 li a:hover:not(.active) {
   background-color: #FFBA00;
   color: white;
+
+.active {
+    background-color: #FFC900;
+    color: white;
+  }
