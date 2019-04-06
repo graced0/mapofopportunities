@@ -5,8 +5,55 @@ body{
   margin:0;
   padding:0;
 }
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 17%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 40px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
 
-ul {
+.sidenav a {
+  border-radius: 10px;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background: #FFBA00;
+  color: white;
+}
+
+.sidenav b:hover {
+  background: #000000;
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  margin-left: 0px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+/*ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -15,7 +62,8 @@ ul {
   height: 100%;
   position: fixed;
   overflow: auto;
-  font-family: Georgia;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 li a {
@@ -25,11 +73,6 @@ li a {
   padding: 16px 16px;
   text-decoration: none;
 }
-
-li a.active {
-    background-color: #FFA822;
-    color: white;
-  }
 
 li a:hover:not(.active) {
   background-color: #FFBA00;
