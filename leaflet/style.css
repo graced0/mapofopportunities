@@ -1,6 +1,6 @@
 body{
   background: #fff0e6;
-  background: linear-gradient(-45deg, #ffa366, #ff6600);
+  background: linear-gradient(45deg, #ffa366, #ff6600);
   margin:0;
   padding:0;
 }
