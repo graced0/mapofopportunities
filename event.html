@@ -8,6 +8,38 @@
 <body>
   <div class="content">
     <h1>Create an event and share it with others!</h1>
+    <p>Please enter the following information: </p>
+    <script>
+      var fName = "events.txt";
+    </script>
+    <form>
+      Event name:
+      <input type="text" name="eventname" /><br />
+      writeFile(fName, )
+      Date:
+      <input type="text" name="date" /><br />
+      Time:
+      <input type="text" name="time" /><br />
+      Location:
+      <input type="text" name="location" /><br />
+      Name of Organization:
+      <input type="text" name="nameOrg" /><br />
+      E-mail:
+      <input type="text" name="email" /><br />
+      Phone Number:
+      <input type="text" name="phonenum" /><br /><br />
+      <input type="button" onclick="myFunction()" value="Create" />
+
+      </form>
+
+      <script>
+        function writeFile(fName, output){
+          var txtFile = new File(fName);
+          txtFile.writeln(output);
+          txtFile.close();
+        }
+      </script>
+
 
   </div>
 
