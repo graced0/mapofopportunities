@@ -1,0 +1,30 @@
+body{
+  background: #fff0e6;
+  background: linear-gradient(-45deg, #ff6600, #fff0e6);
+  margin:0;
+  padding:0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFFFFF;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #FFC900;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #FFBA00;
+  color: white;
