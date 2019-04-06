@@ -24,11 +24,11 @@ li a {
   text-decoration: none;
 }
 
+.active {
+    background-color: #FFA822;
+    color: white;
+  }
+
 li a:hover:not(.active) {
   background-color: #FFBA00;
   color: white;
-
-.active {
-    background-color: #FFC900;
-    color: white;
-  }
