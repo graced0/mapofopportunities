@@ -9,36 +9,49 @@
   <div class="content">
     <h1>Create an event and share it with others!</h1>
     <p>Please enter the following information: </p>
-    <script>
-      var fName = "events.txt";
-    </script>
+
     <form>
       Event name:
-      <input type="text" name="eventname" /><br />
-      writeFile(fName, )
+      <input id="1" type="text" name="eventname" /><br /><br />
       Date:
-      <input type="text" name="date" /><br />
+      <input id="2" type="text" name="date" /><br /><br />
       Time:
-      <input type="text" name="time" /><br />
+      <input id="3" type="text" name="time" /><br /><br />
       Location:
-      <input type="text" name="location" /><br />
+      <input id="4" type="text" name="location" /><br /><br />
       Name of Organization:
-      <input type="text" name="nameOrg" /><br />
+      <input id="5" type="text" name="nameOrg" /><br /><br />
       E-mail:
-      <input type="text" name="email" /><br />
+      <input id="6" type="text" name="email" /><br /><br />
       Phone Number:
-      <input type="text" name="phonenum" /><br /><br />
-      <input type="button" onclick="myFunction()" value="Create" />
+      <input id="7" type="text" name="phonenum" /><br /><br />
+      <input type="button" onclick="writeArray()" value="Create" />
 
       </form>
 
       <script>
-        function writeFile(fName, output){
-          var txtFile = new File(fName);
-          txtFile.writeln(output);
-          txtFile.close();
+
+        function writeArray(){
+            var array = new Array();
+            var i;
+            while(i<1)
+            {
+              var x = document.getElementbyId(i.toString()).value;
+              array.push(x);
+              i++;
+
+            }
+
+            while(i>1)
+            {
+              var x = document.getElementbyId(i.toString()).value;
+              array.push(x);
+              i++;
+            }
         }
+
       </script>
+
 
 
   </div>
