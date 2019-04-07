@@ -4,12 +4,57 @@
   <title>Map Of Opportunities: Home</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-  <script src = "./index.js"></script>
-  <link rel="stylesheet" type="text/css" href="./index.css">
+  <style>
+    body{
+      background-image: linear-gradient(to right, rgba(255, 153, 204), rgba(153, 204, 255), rgba(204, 255, 153));
+    }
+    .sidenav {
+      height: 100%;
+      width: 0%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+      padding-top: 47px;
+      transition: 0.5s;
+      background-color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+    .sidenav a {
+      padding: 16px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      color: #000000;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav b:hover {
+      background: #000000;
+      color: white;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 25px;
+      margin-left: 0px;
+    }
+    .sidenav a:hover {
+      background-image: linear-gradient(to right, rgba(255, 153, 204), rgba(153, 204, 255), rgba(204, 255, 153));
+      color: white;
+    }
+  </style>
 </head>
 <body>
-<div id="mySidenav" class="sidenav" style="width: 0;">
+<div id="mySidenav" class="sidenav" style="width: 0; ">
   <b href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</b>
   <a href="index.html">Home</a>
   <a href="mappage.html">Map of Opportunities</a>
@@ -21,8 +66,18 @@
 <h1 style="font-size:40px;text-align: center; font-weight: bold; font-family: 'Fredoka One', cursive; ">Map of Opportunities</h1>
 <center>
 <h2 style="font-family: 'Didact Gothic', sans-serif;">About Us</h2>
+<img src="IMG_1976.JPG" />
+<p style="font-family: 'Raleway', sans-serif;">(Meghana G., Victoria C., and Grace D.)  </p>
+<h3 style="font-family: 'Nunito Sans', sans-serif;">We were inspired by our desire to be able to easily find and discover new experiences without having to rely on our parents<br />and teachers all the time. Our program was also created because we thought it was important to support the building of relationships<br /> with new people since we all met at the HackTJ event, 24 hours before we finished our project together.</h3>
 </center>
 </div>
 </body>
-
+<script>
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+</script>
 <html>

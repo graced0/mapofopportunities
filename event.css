@@ -46,3 +46,12 @@ body{
   font-size: 25px;
   margin-left: 0px;
 }
+.subbut{
+  background-color: #1D9A6C;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+}
