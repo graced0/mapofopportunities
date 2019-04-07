@@ -1,19 +1,73 @@
 <DOCTYPE! html>
 <html>
 <head>
-  <title>Virgina</title>
+  <title>Map of Opportunities: Virgina</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <style>
+    body{
+      background: #FFCCEC;
+      background-color: linear-gradient(to bottom, #D5D1F8 0%, #FFCCEC 100%);
+
+      margin:0;
+      padding:0;
+    }
+
   .dropbtn {
-    background-color: #4CAF50;
+    background-color: #FF88A0;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
   }
 
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #FF5944;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    padding-top: 47px;
+    transition: 0.5s;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .sidenav a {
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    background: #FF6667;
+    color: white;
+  }
+
+  .sidenav b:hover {
+    background: #000000;
+    color: white;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    margin-left: 0px;
   }
 
   #myInput {
@@ -25,6 +79,7 @@
     padding: 14px 20px 12px 45px;
     border: none;
     border-bottom: 1px solid #ddd;
+    font-family: 'Nunito Sans', sans-serif;
   }
 
   #myInput:focus {outline: 3px solid #ddd;}
@@ -42,6 +97,7 @@
     overflow: auto;
     border: 1px solid #ddd;
     z-index: 1;
+    font-family: 'Nunito Sans', sans-serif;
   }
 
   .dropdown-content a {
@@ -58,8 +114,19 @@
   </head>
 
 <body>
-  <h1>Welcome To Virginia's Opportunity Page!</h1>
-  <h2>Explore Exciting Opportunities in Virginia!</h2>
+  <div id="mySidenav" class="sidenav" style="width: 0;">
+    <b href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</b>
+    <a href="../index.html">Home</a>
+    <a href="../mappage.html">Map of Opportunities</a>
+    <a href="../event.html">Create an Event</a>
+    <a href="#">About Us</a>
+  </div>
+  <div id="main">
+  <span style="padding-left: 10px;font-size:40px;cursor:pointer" onclick="openNav()"> &#9776; </span>
+  <h1 style="font-size:40px;padding: 20px 20px;text-align: center; font-weight: bold; font-family: 'Fredoka One', cursive; ">Map of Opportunities</h1>
+  <center>
+  <h2 style="font-family: 'Nunito Sans', sans-serif;">Virginia</h2>
+  <p style="font-family: 'Raleway', sans-serif;">Choose an event category</p>
   <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">Dropdown</button>
     <div id="myDropdown" class="dropdown-content">
@@ -76,9 +143,8 @@
       <a href = "#">Job Listings</a>
     </div>
   </div>
+  </center>
   <script>
-  /* When the user clicks on the button,
-  toggle between hiding and showing the dropdown content */
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -97,6 +163,12 @@
         a[i].style.display = "none";
       }
     }
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
   }
 
   </script>
