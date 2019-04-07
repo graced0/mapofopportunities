@@ -6,10 +6,94 @@
 </head>
 
 <body>
-  <div class="content">
     <h1>Create an event and share it with others!</h1>
+    <p>Please enter the following information: </p>
 
-  </div>
+    <form>
+      Event name:
+      <input id="1" type="text" name="eventname" /><br /><br />
+      Date:
+      <input id="2" type="text" name="date" /><br /><br />
+      Time:
+      <input id="3" type="text" name="time" /><br /><br />
+      Location:
+      <input id="4" type="text" name="location" /><br /><br />
+      Name of Organization:
+      <input id="5" type="text" name="nameOrg" /><br /><br />
+      E-mail:
+      <input id="6" type="text" name="email" /><br /><br />
+      Phone Number:
+      <input id="7" type="text" name="phonenum" /><br /><br />
+
+      Type of Experience:
+      <select id = "Experience">
+        <option>Art</option>
+        <option>Technology</option>
+        <option>Sports</option>
+        <option>Volunteering/Social Work</option>
+        <option>Cooking</option>
+        <option>Medical</option>
+        <option>Stem School Applications</option>
+        <option>Scholarships</option>
+        <option>Library Opportunities</option>
+        <option>Job Listings</option>
+      </select>
+
+      <input type="button" onclick="writeArray()" value="Create" />
+      <button onClick="myFunction()">Submit</button>
+      </form>
+
+
+      <script>
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+        function writeArray(){
+            var array = new Array();
+            var i;
+            while(i<1)
+            {
+              var x = document.getElementbyId(i.toString()).value;
+              array.push(x);
+              i++;
+
+            }
+
+            while(i>1)
+            {
+              var x = document.getElementbyId(i.toString()).value;
+              array.push(x);
+              i++;
+            }
+        }
+
+      </script>
+
+
+
+
 
 </body>
 
