@@ -1,0 +1,82 @@
+<DOCTYPE! html>
+<html>
+<head>
+  <title>Map of Opportunities: Virginia - Technology</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <style>
+    body{
+      background: #CCFFFD;
+      background-color: linear-gradient(to bottom, #ff6600 0%, #CCFFFD 100%);
+
+      margin:0;
+      padding:0;
+    }
+    .sidenav {
+      height: 100%;
+      width: 0%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 47px;
+      transition: 0.5s;
+      background-color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+    .sidenav a {
+      padding: 16px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      color: #000000;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      background: #66BCFF;
+      color: white;
+    }
+
+    .sidenav b:hover {
+      background: #000000;
+      color: white;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 25px;
+      margin-left: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav" style="width: 0;">
+    <b href="../../javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</b>
+    <a href="../../index.html">Home</a>
+    <a href="../../mappage.html">Map of Opportunities</a>
+    <a href="../../event.html">Create an Event</a>
+    <a href="#">About Us</a>
+  </div>
+  <span style="padding-left: 10px;font-size:40px;cursor:pointer" onclick="openNav()"> &#9776; </span>
+<h1 style="font-size:40px;padding: 20px;text-align: center; font-weight: bold; font-family: 'Fredoka One', cursive;">Map of Opportunities</h1>
+<center>
+  <img src="https://hacktj.org/2019/img/bigweblogo.png" width="130" height="80"/>
+<h2 style="font-family: 'Nunito Sans', sans-serif;">Technology Opportunities in Virginia</h2>
+<p style="font-family: 'Raleway', sans-serif;"><b>Event Name:</b> HackTJ 6.0<br/><b>Date:</b> April 6 - 7, 2019<br/><b>Time:</b> 4/6 10:00 am - 4/7 12:30 am<br /><b>State:</b> Virginia<br /><b>Location:</b> 6560 Braddock Rd, Alexandria, VA 22312<br /><b>Name of Organization:</b> TJHSST<br/><b>Email:</b> hello@hacktj.org<br /><b>Phone Number:</b> 703-967-7612<br /><b>Type of Experience:</b>Technology<br /><b>-----<br/>Description:</b><br />HackTJ is a student-run hackathon at TJHSST, where you will have 24 hours to learn how to code and/or work with your friends to make your idea come to life.</p>
+</center>
+<script>
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+</script>
+</html>
