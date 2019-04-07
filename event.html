@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create an Event</title>
+  <link rel="stylesheet" type="text/css" href="./event.css" >
+</head>
+
+<body>
+    <h1>Create an event and share it with others!</h1>
+    <p>Please enter the following information: </p>
+
+    <form action="final.html" target="_blank" method="GET">
+      Event name:
+      <input id="1" type="text" name="eventname" /><br /><br />
+      Date:
+      <input id="2" type="text" name="date" /><br /><br />
+      Time:
+      <input id="3" type="text" name="time" /><br /><br />
+      State:
+      <select id = "4">
+        <option>Alabama</option>
+        <option>Alaska</option>
+        <option>Arizona</option>
+        <option>Arkansas</option>
+        <option>California</option>
+        <option>Colorado</option>
+        <option>Connecticut</option>
+        <option>Delaware</option>
+        <option>Florida</option>
+        <option>Georgia</option>
+        <option>Hawaii</option>
+        <option>Idaho</option>
+        <option>Illinois</option>
+        <option>Indiana</option>
+        <option>Iowa</option>
+        <option>Kansas</option>
+        <option>Kentucky</option>
+        <option>Louisiana</option>
+        <option>Maine</option>
+        <option>Maryland</option>
+        <option>Massachusetts</option>
+        <option>Michigan</option>
+        <option>Minnesota</option>
+        <option>Mississippi</option>
+        <option>Missouri</option>
+        <option>Montana</option>
+        <option>Nebraska</option>
+        <option>Nevada</option>
+        <option>New Hampshire</option>
+        <option>New Jersey</option>
+        <option>New Mexico</option>
+        <option>New York</option>
+        <option>North Carolina</option>
+        <option>North Dakota</option>
+        <option>Ohio</option>
+        <option>Oklahoma</option>
+        <option>Oregon</option>
+        <option>Pennsylvania</option>
+        <option>Rhode Island</option>
+        <option>South Carolina</option>
+        <option>South Dakota</option>
+        <option>Tennessee</option>
+        <option>Texas</option>
+        <option>Utah</option>
+        <option>Vermont</option>
+        <option>Virginia</option>
+        <option>Washington</option>
+        <option>West Virginia</option>
+        <option>Wisconsin</option>
+        <option>Wyoming</option>
+      </select>
+      Location:
+      <input id="5" type="text" name="location" /><br /><br />
+      Name of Organization:
+      <input id="6" type="text" name="nameOrg" /><br /><br />
+      E-mail:
+      <input id="7" type="text" name="email" /><br /><br />
+      Phone Number:
+      <input id="8" type="text" name="phonenum" /><br /><br />
+
+      Type of Experience:
+      <select id = "9">
+        <option>Art</option>
+        <option>Technology</option>
+        <option>Sports</option>
+        <option>Volunteering/Social Work</option>
+        <option>Cooking</option>
+        <option>Medical</option>
+        <option>Stem School Applications</option>
+        <option>Scholarships</option>
+        <option>Library Opportunities</option>
+        <option>Job Listings</option>
+      </select>
+
+      Description:
+      <input id = "10" type = "text" name = "descript"/><br/><br/>
+      Submission:
+
+
+
+      <input type="button" onclick="writeArray()" class="subbut" value="Submit" />
+
+      </form>
+
+
+      <script>
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+
+/*function myFunction()
+{
+  var a = document.getElementById("companyName").value;
+  var b = document.getElementById("eventname").value;
+  var c = document.getElementById
+}*/
+
+
+
+      /*  function writeArray()
+        {
+            var array = new Array();
+            var i;
+            for(i = 0; i<11; i++)
+            {
+              var x = document.getElementbyId(i.toString()).value;
+              array.push(x);
+            }
+          document.write(array);
+        }*/
+
+        function putIntoState()
+        {
+            var array = new Array();
+             var i;
+             for(i=0; i<10; i++)
+             {
+               document.getElementbyId(i.toString()).innerHTML = x;
+               array.push(x);
+        }
+        for (var j = 0; j < array.length(); j++) {
+          console.log(array[j]);
+        }
+
+
+       }
+
+
+
+
+</script>
+</body>
+
+</html>

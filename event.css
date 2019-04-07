@@ -1,0 +1,57 @@
+body{
+  background: #E2F496;
+  background-color: linear-gradient(to bottom, #C3EF79 0%, #E2F496 100%);
+
+  margin:0;
+  padding:0;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 47px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.sidenav a {
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background: #90DF1B;
+  color: white;
+}
+
+.sidenav b:hover {
+  background: #000000;
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  margin-left: 0px;
+}
+.subbut{
+  background-color: #1D9A6C;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+}

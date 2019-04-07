@@ -1,19 +1,26 @@
-<!DOCTYPE html>
+<DOCTYPE! html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map of Opportunities: Map</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src = "./mappage.js"></script>
+<link rel="stylesheet" type="text/css" href="./mappage.css">
 <style>
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #9A44FF;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
+  background-color: #6912FF;
 }
 
 #myInput {
@@ -25,6 +32,8 @@
   padding: 14px 20px 12px 45px;
   border: none;
   border-bottom: 1px solid #ddd;
+  font-family: 'Nunito Sans', sans-serif;
+
 }
 
 #myInput:focus {outline: 3px solid #ddd;}
@@ -42,6 +51,8 @@
   overflow: auto;
   border: 1px solid #ddd;
   z-index: 1;
+  font-family: 'Nunito Sans', sans-serif;
+
 }
 
 .dropdown-content a {
@@ -57,19 +68,29 @@
 </style>
 </head>
 <body>
-
-<h2>Search/Filter Dropdown</h2>
-<p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
-
+  <div id="mySidenav" class="sidenav" style="width: 0;">
+    <b href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</b>
+    <a href="index.html">Home</a>
+    <a href="mappage.html">Map of Opportunities</a>
+    <a href="event.html">Create an Event</a>
+    <a href="about.html">About Us</a>
+  </div>
+  <span style="padding-left: 10px;font-size:40px;cursor:pointer" onclick="openNav()"> &#9776; </span>
+<center>
+<h1 style="font-size:40px;padding: 20px;text-align: center; font-weight: bold; font-family: 'Fredoka One', cursive;">Map of Opportunities</h1>
+<h2 style="font-family: 'Nunito Sans', sans-serif;">Search/Filter Location</h2>
+<p style="font-family: 'Raleway', sans-serif;">Click on the button to open the dropdown menu, and use the input field to choose your state.</p>
+</center>
+<center>
 <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
     <a href = "#">Alabama</a>
-    <a href = "Alaska.html">Alaska</a>
+    <a href = "#">Alaska</a>
     <a href = "#">Arizona</a>
     <a href = "#">Arkansas</a>
-    <a href = "California.html">California</a>
+    <a href = "#">California</a>
     <a href = "#">Colorado</a>
     <a href = "#">Connecticut</a>
     <a href = "#">Delaware</a>
@@ -110,13 +131,14 @@
     <a href = "#">Texas</a>
     <a href = "#">Utah</a>
     <a href = "#">Vermont</a>
-    <a href = "Virginia.html">Virginia</a>
+    <a href = "locations/virginia.html">Virginia</a>
     <a href = "#">Washington</a>
     <a href = "#">West Virginia</a>
     <a href = "#">Wisonsin</a>
     <a href="#">Wyoming</a>
   </div>
 </div>
+</center>
 <script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */

@@ -1,0 +1,61 @@
+body{
+  background: #fff0e6;
+  background-color: linear-gradient(to bottom, #ff6600 0%, #fff0e6 100%);
+
+  margin:0;
+  padding:0;
+}
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  padding-top: 47px;
+  transition: 0.5s;
+  background-color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.sidenav a {
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background: #FFBA00;
+  color: white;
+}
+
+.sidenav b:hover {
+  background: #000000;
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  margin-left: 0px;
+}
+
+#image {
+		-webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
