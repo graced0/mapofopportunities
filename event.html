@@ -22,55 +22,148 @@
   <center>
   <div class="content">
     <h1 style="font-size:40px;padding-top: 20px; text-align: center; font-weight: bold; font-family: 'Fredoka One', cursive; ">Map of Opportunities</h1>
-    <h2 style="font-family: 'Nunito Sans', sans-serif;">Create an event for others to discover.</h2>
-    <p style="font-family: 'Raleway', sans-serif;">Please enter the following information: </p>
+    <h3 style="font-size: 20px;font-family: 'Nunito Sans', sans-serif;">To create an event for others to discover, please enter the following information: </h3>
 
-    <form style="font-family: 'Nunito Sans', sans-serif;">
+    <form style="font-family: 'Raleway', sans-serif;">
+      Company Name:
+      <input id = "1" type = "text" name = "companyName" /><br/><br/>
       Event name:
-      <input style="padding: -5 px;" id="1" type="text" name="eventname" /><br /><br />
+      <input id="2" type="text" name="eventname" /><br /><br />
       Date:
-      <input style="padding: -5 px;" id="2" type="text" name="date" /><br /><br />
+      <input id="3" type="text" name="date" /><br /><br />
       Time:
-      <input style="padding: -5 px;" id="3" type="text" name="time" /><br /><br />
+      <input id="4" type="text" name="time" /><br /><br />
+      State:
+      <select id = "5">
+        <option>Alabama</option>
+        <option>Alaska</option>
+        <option>Arizona</option>
+        <option>Arkansas</option>
+        <option>California</option>
+        <option>Colorado</option>
+        <option>Connecticut</option>
+        <option>Delaware</option>
+        <option>Florida</option>
+        <option>Georgia</option>
+        <option>Hawaii</option>
+        <option>Idaho</option>
+        <option>Illinois</option>
+        <option>Indiana</option>
+        <option>Iowa</option>
+        <option>Kansas</option>
+        <option>Kentucky</option>
+        <option>Louisiana</option>
+        <option>Maine</option>
+        <option>Maryland</option>
+        <option>Massachusetts</option>
+        <option>Michigan</option>
+        <option>Minnesota</option>
+        <option>Mississippi</option>
+        <option>Missouri</option>
+        <option>Montana</option>
+        <option>Nebraska</option>
+        <option>Nevada</option>
+        <option>New Hampshire</option>
+        <option>New Jersey</option>
+        <option>New Mexico</option>
+        <option>New York</option>
+        <option>North Carolina</option>
+        <option>North Dakota</option>
+        <option>Ohio</option>
+        <option>Oklahoma</option>
+        <option>Oregon</option>
+        <option>Pennsylvania</option>
+        <option>Rhode Island</option>
+        <option>South Carolina</option>
+        <option>South Dakota</option>
+        <option>Tennessee</option>
+        <option>Texas</option>
+        <option>Utah</option>
+        <option>Vermont</option>
+        <option>Virginia</option>
+        <option>Washington</option>
+        <option>West Virginia</option>
+        <option>Wisconsin</option>
+        <option>Wyoming</option>
+      </select>
       Location:
-      <input style="padding: -5 px;" id="4" type="text" name="location" /><br /><br />
+      <input id="6" type="text" name="location" /><br /><br />
       Name of Organization:
-      <input style="padding: -5 px;" id="5" type="text" name="nameOrg" /><br /><br />
+      <input id="7" type="text" name="nameOrg" /><br /><br />
       E-mail:
-      <input style="padding: -5 px;" id="6" type="text" name="email" /><br /><br />
+      <input id="8" type="text" name="email" /><br /><br />
       Phone Number:
-      <input style="padding: -5 px;" id="7" type="text" name="phonenum" /><br /><br />
-      <input stye="font-family: 'Nunito Sans', sans-serif;" type="button" onclick="writeArray()" value="Create" />
+      <input id="9" type="text" name="phonenum" /><br /><br />
+
+      Type of Experience:
+      <select id = "10">
+        <option>Art</option>
+        <option>Technology</option>
+        <option>Sports</option>
+        <option>Volunteering/Social Work</option>
+        <option>Cooking</option>
+        <option>Medical</option>
+        <option>Stem School Applications</option>
+        <option>Scholarships</option>
+        <option>Library Opportunities</option>
+        <option>Job Listings</option>
+      </select>
+
+      Description:
+      <input id = "11" type = "text" name = "descript"/><br/><br/>
+      Submission:
+
+
+
+      <input type="button" onclick="writeArray()" value="Submit" />
 
       </form>
 
+
       <script>
 
-        function writeArray(){
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+
+/*function myFunction()
+{
+  var a = document.getElementById("companyName").value;
+  var b = document.getElementById("eventname").value;
+  var c = document.getElementById
+}*/
+
+
+
+        function writeArray()
+        {
             var array = new Array();
             var i;
-            while(i<1)
+            for(i = 0; i<11; i++)
             {
               var x = document.getElementbyId(i.toString()).value;
               array.push(x);
-              i++;
-
             }
+          document.write(array);
+        }
 
-            while(i>1)
-            {
-              var x = document.getElementbyId(i.toString()).value;
-              array.push(x);
-              i++;
-            }
+        function putIntoState()
+        {
+          var x = document.getElementbyId("5");
+          <a href file = x.concat(".html")>x</a>
+          file.writeArray();
+        }
+
+        function putIntoExperience()
+        {
+
         }
 
       </script>
 
 
 
-  </div>
-  </center>
+
 
 </body>
 
