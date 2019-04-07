@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Create an Event</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <title>Map of Opportunities: Events</title>
   <link rel="stylesheet" type="text/css" href="./event.css" >
+  <script src = "./event.js"></script>
 </head>
 
 <body>
+  <div id="mySidenav" class="sidenav" style="width: 0;">
+    <b href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</b>
+    <a href="index.html">Home</a>
+    <a href="mappage.html">Map of Opportunities</a>
+    <a href="event.html">Create an Event</a>
+    <a href="#">About Us</a>
+  </div>
+  <span style="padding-left: 10px;font-size:40px;cursor:pointer" onclick="openNav()"> &#9776; </span>
+  <center>
   <div class="content">
-    <h1>Create an event and share it with others!</h1>
-    <p>Please enter the following information: </p>
+    <h1 style="font-size:40px;padding-top: 20px; text-align: center; font-weight: bold; font-family: 'Fredoka One', cursive; ">Map of Opportunities</h1>
+    <h2 style="font-family: 'Nunito Sans', sans-serif;">Create an event for others to discover.</h2>
+    <p style="font-family: 'Raleway', sans-serif;">Please enter the following information: </p>
 
-    <form>
+    <form style="font-family: 'Nunito Sans', sans-serif;">
       Event name:
-      <input id="1" type="text" name="eventname" /><br /><br />
+      <input style="padding: -5 px;" id="1" type="text" name="eventname" /><br /><br />
       Date:
-      <input id="2" type="text" name="date" /><br /><br />
+      <input style="padding: -5 px;" id="2" type="text" name="date" /><br /><br />
       Time:
-      <input id="3" type="text" name="time" /><br /><br />
+      <input style="padding: -5 px;" id="3" type="text" name="time" /><br /><br />
       Location:
-      <input id="4" type="text" name="location" /><br /><br />
+      <input style="padding: -5 px;" id="4" type="text" name="location" /><br /><br />
       Name of Organization:
-      <input id="5" type="text" name="nameOrg" /><br /><br />
+      <input style="padding: -5 px;" id="5" type="text" name="nameOrg" /><br /><br />
       E-mail:
-      <input id="6" type="text" name="email" /><br /><br />
+      <input style="padding: -5 px;" id="6" type="text" name="email" /><br /><br />
       Phone Number:
-      <input id="7" type="text" name="phonenum" /><br /><br />
-      <input type="button" onclick="writeArray()" value="Create" />
+      <input style="padding: -5 px;" id="7" type="text" name="phonenum" /><br /><br />
+      <input stye="font-family: 'Nunito Sans', sans-serif;" type="button" onclick="writeArray()" value="Create" />
 
       </form>
 
@@ -55,6 +70,7 @@
 
 
   </div>
+  </center>
 
 </body>
 
