@@ -1,12 +1,12 @@
 body{
-  background: #fff0e6;
-  background-color: linear-gradient(to bottom, #ff6600 0%, #fff0e6 100%);
+  background: #D5D1F8;
+  background-color: linear-gradient(to bottom, #D5D1F8 0%, ##BF96EC 100%);
 
   margin:0;
   padding:0;
 }
 .sidenav {
-  height: 100%;
+  height: 100%; 
   width: 0%;
   position: fixed;
   z-index: 1;
@@ -16,7 +16,6 @@ body{
   overflow-x: hidden;
   padding-top: 47px;
   transition: 0.5s;
-  background-color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
@@ -30,7 +29,7 @@ body{
 }
 
 .sidenav a:hover {
-  background: #FFBA00;
+  background: #A65FFF;
   color: white;
 }
 
@@ -45,17 +44,4 @@ body{
   right: 15px;
   font-size: 25px;
   margin-left: 0px;
-}
-
-#image {
-		-webkit-animation: rotation 5s infinite linear;
-}
-
-@-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
 }
