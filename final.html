@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Final Screen</title>
+  </head>
+  <body>
+    <h1>Thank You For Sharing Your Opportunity With the World</h1>
+    <p id = "result">
+    </p>
+    <script>
+      // Copied from stack over flow
+      var queryDict ={}
+      location.search.substr(1).split("&").forEach(function(item) {
+        queryDict[item.split("=")[0]] = item.split("=")[1]
+      });
+      var resultText = "";
+      for(var key in queryDict) {
+        resultText += "\n" + key + " is " + queryDict[key];
+      }
+      document.getElementById('result').innerHTML = resultText;
+    
+    </script>
+    </body>
+</html>
