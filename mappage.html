@@ -1,82 +1,146 @@
 <DOCTYPE! html>
 <html>
 <head>
-<title>Find Your Opportunities!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  border-box: box-sizing;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
 </head>
 <body>
-<h1>Finding Your Opportunities!</h1>
-<div class = "dropdown">
-<button onclick = "myFunction()" class = "dropbtn"> Dropdown</button>
-<div id = "myDropdown" class = "dropdown-content">
-  <a href = "#">Alabama</a>
-  <a href = "#">Alaska</a>
-  <a href = "#">Arizona</a>
-  <a href = "#">Arkansas</a>
-  <a href = "#">California</a>
-  <a href = "#">Colorado</a>
-  <a href = "#">Connecticut</a>
-  <a href = "#">Delaware</a>
-  <a href = "#">Florida</a>
-  <a href = "#">Georgia</a>
-  <a href = "#">Hawaii</a>
-  <a href = "#">Idaho</a>
-  <a href = "#">Illinois</a>
-  <a href = "#">Indiana</a>
-  <a href = "#">Iowa</a>
-  <a href = "#">Kansas</a>
-  <a href = "#">Kentucky</a>
-  <a href = "#">Louisiana</a>
-  <a href = "#">Maine</a>
-  <a href = "#">Maryland</a>
-  <a href = "#">Massachusetts</a>
-  <a href = "#">Michigan</a>
-  <a href = "#">Minnesota</a>
-  <a href = "#">Mississippi</a>
-  <a href = "#">Missouri</a>
-  <a href = "#">Montana</a>
-  <a href = "#">Nebraska</a>
-  <a href = "#">Nevada</a>
-  <a href = "#">New Hampshire</a>
-  <a href = "#">New Jersey</a>
-  <a href = "#">New Mexico</a>
-  <a href = "#">New York</a>
-  <a href = "#">North Carolina</a>
-  <a href = "#">North Dakota</a>
-  <a href = "#">Ohio</a>
-  <a href = "#">Oklahoma</a>
-  <a href = "#">Oregon</a>
-  <a href = "#">Pennsylvania</a>
-  <a href = "#">Rhode Island</a>
-  <a href = "#">South Carolina</a>
-  <a href = "#">South Dakota</a>
-  <a href = "#">Tennessee</a>
-  <a href = "#">Texas</a>
-  <a href = "#">Utah</a>
-  <a href = "#">Vermont</a>
-  <a href = "#">Virginia</a>
-  <a href = "#">Washington</a>
-  <a href = "#">West Virginia</a>
-  <a href = "#">Wisonsin</a>
-  <a href="#">Wyoming</a>
+
+<h2>Search/Filter Dropdown</h2>
+<p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href = "#">Alabama</a>
+    <a href = "Alaska.html">Alaska</a>
+    <a href = "#">Arizona</a>
+    <a href = "#">Arkansas</a>
+    <a href = "California.html">California</a>
+    <a href = "#">Colorado</a>
+    <a href = "#">Connecticut</a>
+    <a href = "#">Delaware</a>
+    <a href = "#">Florida</a>
+    <a href = "#">Georgia</a>
+    <a href = "#">Hawaii</a>
+    <a href = "#">Idaho</a>
+    <a href = "#">Illinois</a>
+    <a href = "#">Indiana</a>
+    <a href = "#">Iowa</a>
+    <a href = "#">Kansas</a>
+    <a href = "#">Kentucky</a>
+    <a href = "#">Louisiana</a>
+    <a href = "#">Maine</a>
+    <a href = "#">Maryland</a>
+    <a href = "#">Massachusetts</a>
+    <a href = "#">Michigan</a>
+    <a href = "#">Minnesota</a>
+    <a href = "#">Mississippi</a>
+    <a href = "#">Missouri</a>
+    <a href = "#">Montana</a>
+    <a href = "#">Nebraska</a>
+    <a href = "#">Nevada</a>
+    <a href = "#">New Hampshire</a>
+    <a href = "#">New Jersey</a>
+    <a href = "#">New Mexico</a>
+    <a href = "#">New York</a>
+    <a href = "#">North Carolina</a>
+    <a href = "#">North Dakota</a>
+    <a href = "#">Ohio</a>
+    <a href = "#">Oklahoma</a>
+    <a href = "#">Oregon</a>
+    <a href = "#">Pennsylvania</a>
+    <a href = "#">Rhode Island</a>
+    <a href = "#">South Carolina</a>
+    <a href = "#">South Dakota</a>
+    <a href = "#">Tennessee</a>
+    <a href = "#">Texas</a>
+    <a href = "#">Utah</a>
+    <a href = "#">Vermont</a>
+    <a href = "Virginia.html">Virginia</a>
+    <a href = "#">Washington</a>
+    <a href = "#">West Virginia</a>
+    <a href = "#">Wisonsin</a>
+    <a href="#">Wyoming</a>
+  </div>
 </div>
-</div>
-function myFunction()
-{
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-window.onclike = function(event)
-{
-  if(!event.target.matches('.dropbtn'))
-  {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for(i = 0; i < dropdowns.length; i++)
-    {
-      var openDropdown = dropdowns[i];
-      if(openDropdown.classList.contains('show'))
-      {
-        openDropdown.classList.remove('show');
-      }
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
     }
   }
 }
+
+</script>
+
+</body>
+</html>
