@@ -7,22 +7,20 @@ body{
 }
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 0%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
   background-color: #FFFFFF; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 40px; /* Place content 60px from the top */
+  padding-top: 47px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   background-color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
-
 .sidenav a {
-  border-radius: 10px;
   padding: 16px 16px;
   text-decoration: none;
   font-size: 17px;
