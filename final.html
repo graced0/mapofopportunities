@@ -1,32 +1,40 @@
+<DOCTYPE! html>
 <html>
 <head>
-  <title>Import Data</title>
-  <link rel = "stylesheet"
-  href = "https://fonts.googleapis.com/css?family=Lobster">
+  <title>Final Screen</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
   <style>
   body {background-color: #ffffcc }
   h1
   {
    font-family:"Lobster", serif;
    font-size: 300%
-  }
+ }
   </style>
   </head>
   <body>
-    <h1>Thank You For Sharing Your Opportunity With the World!</h1>
+    <h1 style="font-size:40px;padding: 20px 20px;text-align: center; font-weight: bold; font-family: 'Fredoka One', cursive; ">Thanks for creating an Event on Map of Opportunities</h1>
     <p id = "result">
     </p>
-    <script>
+    <script style="font-size: 200px">
       // Copied from stack over flow
       var queryDict ={}
       location.search.substr(1).split("&").forEach(function(item) {
         queryDict[item.split("=")[0]] = item.split("=")[1]
       });
-      var resultText = "";
+      var resultText = "<h2 style=\"font-family: 'Nunito Sans', sans-serif\";>" + "<center>";
+      var array = ["Event Name: ","Date: ","Time: ","State: ","Location: ","Name of Organization: ","E-mail: ","Phone Number: ","Type of Experience: ","Description: "];
+      var i=0;
       for(var key in queryDict) {
-        if(key.equals(""))
-        resultText += "\n" + key + " : " + queryDict[key] + "\n";
+        var toAdd = queryDict[key];
+        if(i==2){
+          toAdd = queryDict[key].split("%2F")[0]+"/"+queryDict[key].split("%2F")[1]+"/"+queryDict[key].split("%2F")[2];
+        }
+        resultText += "<b>" + array[i] + "</b>" + (queryDict[key]) +"<br/>";
+        i++;
       }
+      resultText += "</center> </h2>";
       document.getElementById('result').innerHTML = resultText;
 
     </script>
