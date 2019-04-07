@@ -10,16 +10,14 @@
     <p>Please enter the following information: </p>
 
     <form action="final.html" target="_blank" method="GET">
-      Company Name:
-      <input id = "1" type = "text" name = "companyName" /><br/><br/>
       Event name:
-      <input id="2" type="text" name="eventname" /><br /><br />
+      <input id="1" type="text" name="eventname" /><br /><br />
       Date:
-      <input id="3" type="text" name="date" /><br /><br />
+      <input id="2" type="text" name="date" /><br /><br />
       Time:
-      <input id="4" type="text" name="time" /><br /><br />
+      <input id="3" type="text" name="time" /><br /><br />
       State:
-      <select id = "5">
+      <select id = "4">
         <option>Alabama</option>
         <option>Alaska</option>
         <option>Arizona</option>
@@ -72,16 +70,16 @@
         <option>Wyoming</option>
       </select>
       Location:
-      <input id="6" type="text" name="location" /><br /><br />
+      <input id="5" type="text" name="location" /><br /><br />
       Name of Organization:
-      <input id="7" type="text" name="nameOrg" /><br /><br />
+      <input id="6" type="text" name="nameOrg" /><br /><br />
       E-mail:
-      <input id="8" type="text" name="email" /><br /><br />
+      <input id="7" type="text" name="email" /><br /><br />
       Phone Number:
-      <input id="9" type="text" name="phonenum" /><br /><br />
+      <input id="8" type="text" name="phonenum" /><br /><br />
 
       Type of Experience:
-      <select id = "10">
+      <select id = "9">
         <option>Art</option>
         <option>Technology</option>
         <option>Sports</option>
@@ -95,12 +93,12 @@
       </select>
 
       Description:
-      <input id = "11" type = "text" name = "descript"/><br/><br/>
+      <input id = "10" type = "text" name = "descript"/><br/><br/>
       Submission:
 
 
 
-      <input type="submit" value="Submit" />
+      <input type="button" onclick="writeArray()" class="subbut" value="Submit" />
 
       </form>
 
@@ -136,7 +134,7 @@ toggle between hiding and showing the dropdown content */
         {
             var array = new Array();
              var i;
-             for(i=0; i<11; i++)
+             for(i=0; i<10; i++)
              {
                document.getElementbyId(i.toString()).innerHTML = x;
                array.push(x);
