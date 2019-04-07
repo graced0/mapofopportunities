@@ -9,11 +9,11 @@
   {
    font-family:"Lobster", serif;
    font-size: 300%
- }
+  }
   </style>
   </head>
   <body>
-    <h1>Thank You For Sharing Your Opportunity With the World</h1>
+    <h1>Thank You For Sharing Your Opportunity With the World!</h1>
     <p id = "result">
     </p>
     <script>
@@ -24,7 +24,8 @@
       });
       var resultText = "";
       for(var key in queryDict) {
-        resultText += "\n" + key + " is " + queryDict[key];
+        if(key.equals(""))
+        resultText += "\n" + key + " : " + queryDict[key] + "\n";
       }
       document.getElementById('result').innerHTML = resultText;
 
