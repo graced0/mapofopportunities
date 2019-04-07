@@ -46,3 +46,16 @@ body{
   font-size: 25px;
   margin-left: 0px;
 }
+
+#image {
+		-webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
